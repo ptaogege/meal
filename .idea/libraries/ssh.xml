@@ -1,0 +1,50 @@
+<component name="libraryTable">
+  <library name="ssh">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/hibernate/mysql-connector-java-8.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/antlr-2.7.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/backport-util-concurrent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/commons-collections-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/ehcache-1.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/hibernate3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/javassist-3.12.0.GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/jta-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/hibernatejar/slf4j-api-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/com.springsource.com.mchange.v2.c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/com.springsource.org.aopalliance-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/com.springsource.org.apache.commons.dbcp-1.2.2.osgi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/com.springsource.org.apache.commons.logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/com.springsource.org.apache.commons.pool-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-aop-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-aspects-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-beans-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-context-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-core-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-expression-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-jdbc-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-orm-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-test-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-tx-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/springjar/spring4.x/spring-web-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/asm-3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/asm-commons-3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/asm-tree-3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/commons-fileupload-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/commons-io-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/commons-lang3-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/freemarker-2.3.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/javassist-3.11.0.GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/log4j-api-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/log4j-core-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/ognl-3.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/struts2-core-2.3.33.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/struts2-spring-plugin-2.3.33.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JetBrains/ssh/struts2jar/xwork-core-2.3.33.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

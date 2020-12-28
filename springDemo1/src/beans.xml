@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--开启注解-->
+    <context:annotation-config/>
+    <!--配置注解扫描的位置-->
+    <context:component-scan base-package="com.tao.spring"/>
+
+
+
+
+    <!--创建bean,配置bean-->
+    <!--<bean name="userService" class="com.tao.spring.service.impl.UserServiceImpl"/>
+    <bean id="user" class="com.tao.spring.bean.User">
+        <constructor-arg name="username" value="张三"/>
+        <constructor-arg name="password" value="123456"/>
+        <constructor-arg name="age" value="22"/>
+    </bean>
+
+    <bean id="user1" class="com.tao.spring.bean.User">
+        <constructor-arg index="0" value="李四"/>
+        <constructor-arg index="1" value="123456"/>
+        <constructor-arg index="2" value="20"/>
+    </bean>
+
+    <bean id="user2" class="com.tao.spring.bean.User" p:username="张无忌" p:password="66666" p:age="23" p:address-ref="address"/>
+
+    <bean id="user3" class="com.tao.spring.bean.User">
+        <property name="username" value="#{'谢逊'}"/>
+        <property name="password" value="#{T(java.lang.Math).random()}"/>
+        <property name="age" value="#{21}"/>
+        <property name="address" value="#{address}"/>
+        <property name="course">
+            <list>
+                <value>哥哥</value>
+                <value>姐姐</value>
+                <value>妹妹</value>
+            </list>
+        </property>
+        <property name="infos">
+            <map>
+                <entry key="宝马" value="50W"/>
+                <entry key="奔驰" value="80W"/>
+            </map>
+        </property>
+        <property name="cars">
+            <set>
+                <value>布加迪威龙</value>
+                <value>保时捷</value>
+            </set>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="username">root</prop>
+                <prop key="password">1135</prop>
+                <prop key="url">www.baidu.com</prop>
+            </props>
+        </property>
+        <property name="mems">
+            <array>
+                <value>语文</value>
+                <value>数学</value>
+            </array>
+        </property>
+     </bean>
+
+
+    <bean id="address" class="com.tao.spring.bean.Address">
+        <constructor-arg name="province" value="山东省"/>
+        <constructor-arg name="city" value="枣庄市"/>
+    </bean>-->
+
+</beans>

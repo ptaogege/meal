@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+		"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <constant name="struts.i18n.encoding" value="gbk"></constant>
+	<!-- 定义一个名称为restrant的包，继承struts 2的默认包，指定命名空间为"/" -->
+	<package name="restrant" namespace="/" extends="struts-default">
+	
+	   <!-- 配置拦截器AuthorityInterceptor -->
+	    <interceptors>
+	    	<interceptor name="loginCheck" class="com.restrant.interceptor.AuthorityInterceptor" />
+	    </interceptors>
+	    <!-- 设置全局的返回值,返回首页 -->         
+	    <global-results>             
+	    	<result name="login" type="redirectAction">/toShowMeal</result>
+	    </global-results>     
+	    
+		<!-- 为MealAction类中的toShowMeal方法配置映射 -->
+		<action name="toShowMeal" class="com.restrant.action.MealAction" method="toShowMeal">
+			<result name="toShowMeal">/show.jsp</result>			
+		</action>
+		
+		<action name="toManageMeal" class="com.restrant.action.MealAction" method="toManageMeal">
+			<result name="managemeal">/managemeal.jsp</result>		
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />			
+		</action>
+		
+		<action name="toUpdateMeal" class="com.restrant.action.MealAction" method="toUpdateMeal">
+			<result name="updateMeal">/updateMeal.jsp</result>		
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />			
+		</action>
+		
+		<action name="doUpdateMeal" class="com.restrant.action.MealAction" method="doUpdateMeal">
+			<result name="toShowMeal" type="redirectAction">toShowMeal</result>	
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />			
+		</action>
+		
+		<!-- 为MealAction类中的toShowMeal方法配置映射 -->
+		<action name="toShowDetails" class="com.restrant.action.MealAction" method="toShowDetails">
+			<result name="toShowDetails">/details.jsp</result>	
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />				
+		</action>
+		
+		<action name="toAddMeal" class="com.restrant.action.MealAction" method="toAddMeal">
+			<result name="addMeal">/addMeal.jsp</result>	
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />				
+		</action>
+		
+		<action name="doAddMeal" class="com.restrant.action.MealAction" method="doAddMeal">
+			<result name="toShowMeal" type="redirectAction">toShowMeal</result>		
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />			
+		</action>
+		
+		<action name="deleteMeal" class="com.restrant.action.MealAction" method="deleteMeal">
+			<result name="toManageMeal" type="redirectAction">toManageMeal</result>		
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />			
+		</action>		
+		
+		<action name="addtoshopcart" class="cartAction" method="addtoshopcart">
+			<result name="shopCart">/shopCart.jsp</result>	
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />		
+		</action>
+		
+		<action name="updateSelectedQuantity" class="com.restrant.action.CartAction" method="updateSelectedQuantity">
+			<result name="shopCart">/shopCart.jsp</result>			
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />		
+		</action>
+		
+		<action name="deleteSelectedOrders" class="com.restrant.action.CartAction" method="deleteSelectedOrders">
+			<result name="shopCart">/shopCart.jsp</result>	
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />				
+		</action>		
+		
+		<action name="clearCart" class="com.restrant.action.CartAction" method="clearCart">
+			<result name="shopCart">/shopCart.jsp</result>	
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />				
+		</action>
+		
+		<action name="addOrders" class="com.restrant.action.OrdersAction" method="addOrders">
+			<result name="show" type="redirectAction">toMyOrders</result>
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />				
+		</action>
+		
+		<action name="toOrdersDetails" class="com.restrant.action.OrdersAction" method="toOrdersDetails">
+			<result name="toOrdersDetails">/myordersdetails.jsp</result>	
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />				
+		</action>		
+		
+		<action name="toMyOrders" class="com.restrant.action.OrdersAction" method="toMyOrders">
+			<result name="myorders">/myorders.jsp</result>	
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />			
+		</action>
+		
+		<action name="deleteOrders" class="com.restrant.action.OrdersAction" method="deleteOrders">
+			<result name="toMyOrders" type="redirectAction">toMyOrders</result>		
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />		
+		</action>	
+		
+		<action name="toManageOrders" class="com.restrant.action.OrdersAction" method="toManageOrders">
+			<result name="manageorders">/manageorders.jsp</result>	
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />			
+		</action>
+		
+		<action name="handleOrders" class="com.restrant.action.OrdersAction" method="handleOrders">
+			<result name="toManageOrders" type="redirectAction">toManageOrders</result>		
+			<interceptor-ref name="loginCheck" />	
+			<interceptor-ref name="defaultStack" />	
+		</action>
+		
+		<action name="validateLogin" class="com.restrant.action.UserAction" method="validateLogin">
+			<result name="toShowMeal" type="redirectAction">toShowMeal</result>
+		</action>
+		
+		<action name="register" class="com.restrant.action.UserAction" method="register">
+			<result name="show" type="redirectAction">toShowMeal</result>	
+		</action>
+		<action name="logOut" class="com.restrant.action.UserAction" method="logOut">
+			<result name="show" type="redirectAction">toShowMeal</result>	
+		</action>
+		<action name="modifyUsers" class="com.restrant.action.UserAction" method="modifyUsers">
+			<result name="show" type="redirectAction">toShowMeal</result>	
+		</action>
+		
+	</package>
+</struts>    
